@@ -1,0 +1,28 @@
+---
+galaxy_info:
+  role_name: virtualbox
+  author: Ali Muhammad
+  description: Virtualbox installation or uninstallation in Debian/EL based systems with amd64 architecture.
+  company: none
+  license: MIT
+  min_ansible_version: 2.4
+
+  platforms:
+    - name: Ubuntu
+      versions:
+        - xenial
+        - bionic
+        - focal
+    - name: Debian
+      versions:
+        - stretch
+        - buster
+
+  galaxy_tags:
+    - virtualbox
+    - os
+    - system
+    - linux
+    - virtualization
+
+dependencies: []
