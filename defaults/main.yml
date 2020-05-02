@@ -6,4 +6,4 @@ virtualbox_app_name: virtualbox
 virtualbox_desired_state: present
 virtualbox_gpg_key: https://www.virtualbox.org/download/oracle_vbox_2016.asc
 virtualbox_repo_debian: "deb [arch=amd64] https://download.virtualbox.org/virtualbox/debian {{ ansible_lsb['codename'] }} contrib"
-virtualbox_repo_debian_filename: {{ virtualbox_app_name }}
+virtualbox_repo_debian_filename: "{{ virtualbox_app_name }}"
