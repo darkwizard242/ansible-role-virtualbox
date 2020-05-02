@@ -1,0 +1,19 @@
+---
+# tasks file for virtualbox - Debian Family
+
+- name: Add gpg signing key for {{ virtualbox_app_name }}.
+  apt_key:
+    url: "{{ virtualbox_gpg_key }}"
+    state: present
+- name: Adding repository {{ virtualbox_repo_debian }} on Debian based systems.
+  apt_repository:
+    repo: "{{ virtualbox_repo_debian }}"
+    state: "{{ virtualbox_repo_desired_state }}"
+    filename: "{{ virtualbox_repo_debian_filename }}"
+    update_cache: yes
+- name: Installing {{ virtualbox_app_name }}-{{ virtualbox_version }} on Debian based systems.
+  apt:
+    name: "{{ virtualbox_app_name }}-{{ virtualbox_version }}"
+    state: "{{ virtualbox_desired_state }}"
+    force_apt_get: yes
+    update_cache: yes
