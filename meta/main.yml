@@ -1,7 +1,7 @@
 ---
 galaxy_info:
   role_name: virtualbox
-  author: Ali Muhammad
+  author: darkwizard242
   description: Virtualbox installation or uninstallation in Debian based systems with amd64 architecture.
   company: none
   license: MIT
