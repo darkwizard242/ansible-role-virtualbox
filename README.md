@@ -15,7 +15,7 @@ Available variables are listed below (located in `defaults/main.yml`):
 ### Variables list:
 
 ```yaml
-virtualbox_version: 6.1
+virtualbox_version: 7.0
 virtualbox_app_name: virtualbox
 virtualbox_desired_state: present
 virtualbox_gpg_key: https://www.virtualbox.org/download/oracle_vbox_2016.asc
