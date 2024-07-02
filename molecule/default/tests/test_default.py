@@ -6,7 +6,7 @@ testinfra_hosts = testinfra.utils.ansible_runner.AnsibleRunner(
     os.environ['MOLECULE_INVENTORY_FILE']).get_hosts('all')
 
 
-PACKAGE = 'virtualbox-6.1'
+PACKAGE = 'virtualbox-7.0'
 PACKAGE_BINARY = '/usr/bin/virtualbox'
 DEBIAN_REPO_FILE = '/etc/apt/sources.list.d/virtualbox.list'
 
